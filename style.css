@@ -1,0 +1,253 @@
+/* Мои цвета ссылка*/
+
+/* таблица */
+table {
+
+    font-family: 'Ubuntu', sans-serif;
+    border-collapse: collapse;
+    border: rgb(127, 113, 134);
+    background-color: rgb(255, 255, 255);
+}
+
+th {
+    padding: 4px;
+}
+
+td {
+    padding: 2px;
+}
+
+/* ссылка */
+a {
+    font-family: 'Oswald', sans-serif;
+}
+
+p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 23px;
+    color: black;
+}
+
+hr {
+    width: 40%;
+    height: 3px;
+    border: none;
+    background-color: rgb(218, 221, 252);
+}
+
+ul {
+    font-size: 19px;
+}
+
+h2,
+h3 {
+    color: rgb(50, 46, 109);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 29px;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    background-image: url(img/pexels-photo-5676472.jpeg);
+    background-attachment: fixed;
+    background-position-y: top;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+figcaption {
+    color: rgb(150, 113, 180);
+}
+
+.layout-conteiner {
+    background-color: white;
+    border-radius: 3px;
+}
+
+.main {
+    display: flex;
+    width: 90%;
+    padding: 20px;
+    margin: 10px;
+}
+
+.section {
+    background-color: rgb(148, 179, 253);
+    height: 600px;
+    position: relative;
+    padding: 10px;
+    margin: 10px;
+    width: 50%;
+    border-radius: 10px;
+}
+
+.section_About_me {
+    /* background-color: rgb(148, 179, 253); */
+    height: 600px;
+    padding: 10px;
+    margin: 10px;
+    position: relative;
+    /* top: 400px; */
+    border-radius: 10px;
+}
+
+h1 {
+    color: rgb(50, 46, 109);
+    font-size: 35px;
+    font-family: 'Inter', sans-serif;
+}
+
+.strong-text {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.text-main {
+    font-weight: normal;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.div-text-main {
+    padding: 10px -20px;
+}
+
+.text-list {
+    background-color: rgb(148, 179, 253);
+    border-radius: 10px;
+    position: relative;
+    top: 95px;
+    height: 190px;
+}
+
+.img-box1 {
+    position: relative;
+}
+
+.picture1 {
+    border: 2px solid rgb(148, 179, 253);
+    max-width: 400px;
+    min-height: 230px;
+    border-radius: 3px;
+    position: relative;
+    padding: 10px;
+    top: 60px;
+}
+
+.table-box {
+    background-color: rgb(148, 179, 253);
+    position: relative;
+    max-width: 600px;
+    padding-bottom: 20px;
+    padding-top: 7px;
+    border-radius: 10px;
+}
+
+.video-1 {
+    border-radius: 3px;
+    border: 2px solid rgb(148, 179, 253);
+    padding: 10px;
+    margin: 20px;
+}
+
+.letter {
+    background-color: rgb(148, 179, 253);
+    position: relative;
+    max-width: 400px;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 30px;
+}
+
+.letter-text-box {
+    display: flex;
+    justify-content: center;
+    margin-top: -20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
+
+.text-painting {
+    background-color: rgb(148, 179, 253);
+    position: relative;
+    max-width: 600px;
+    max-height: 200px;
+    border-radius: 10px;
+    top: 50px;
+    padding: 20px;
+}
+
+.galery {
+    /* border: 2px solid rgb(148, 179, 253); */
+    background-color: rgb(148, 179, 253);
+    padding: 6px;
+    border-radius: 4px;
+}
+
+.main-galary {
+    display: block;
+}
+
+.section-galary {
+    display: flex;
+}
+
+.paints {
+    display: block;
+    border-radius: 3px;
+    border: 3px solid rgb(255, 255, 255);
+    /* padding: 5px; */
+}
+
+.NY {
+    margin: 0 0 0 10px;
+    max-width: 390px;
+    max-height: 690px;
+}
+
+.grand {
+    margin: 0 10px 0 10px;
+    max-width: 690;
+    max-height: 370px;
+}
+
+.lapti {
+    max-width: 390px;
+    max-height: 690px;
+    margin: 0 10px;
+}
+
+.ywaza {
+    max-width: 390px;
+    max-height: 690px;
+    margin: 0 10px
+}
+
+.figure-NY {
+    background-color: rgb(148, 179, 253);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.figure-grand {
+    background-color: rgb(148, 179, 253);
+    padding: 15px;
+    border-radius: 10px;
+    max-height: 395px;
+}
+
+.figure-lapti {
+    background-color: rgb(148, 179, 253);
+    padding: 15px;
+    border-radius: 10px;
+
+}
+
+.figure-ywaza {
+    background-color: rgb(148, 179, 253);
+    padding: 15px;
+    border-radius: 10px;
+}
