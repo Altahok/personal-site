@@ -35,6 +35,10 @@ hr {
     background-color: rgb(218, 221, 252);
 }
 
+.hr-2 {
+    margin: 30px 0;
+}
+
 ul {
     font-size: 19px;
 }
@@ -251,3 +255,75 @@ h1 {
     padding: 15px;
     border-radius: 10px;
 }
+
+/* АНИМАЦИЯ */
+.animation-section {
+    height: 100px;
+}
+
+.animation-div {
+    width: 200px;
+    height: 100px;
+    /* background-color: rgb(148, 179, 253); */
+    border-radius: 7px;
+    animation-name: text-go-size;
+    animation-duration: 7s;
+    position: relative;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    border: 5px dashed rgba(238, 30, 30, 0.938);
+}
+
+@keyframes text-go-size {
+    0% {
+        top: 0;
+        left: -400px;
+        /* color: tomato; */
+        font-size: 45px;
+        border: 5px dashed rgba(238, 30, 30, 0.938);
+    }
+
+    25% {
+        top: 25px;
+        width: 150px;
+        height: 70px;
+        /* color: turquoise; */
+        font-size: 30px;
+        border: 5px dashed rgb(240, 199, 16);
+    }
+
+    50% {
+        top: 0;
+        left: 400px;
+        width: 200px;
+        height: 100px;
+        /* color: orange; */
+        font-size: 45px;
+        border: 5px dashed rgba(36, 238, 18, 0.849);
+    }
+
+    75% {
+        top: 25px;
+        width: 150px;
+        height: 70px;
+       /* color: royalblue; */
+       font-size: 30px;
+       border: 5px dashed rgba(17, 137, 235, 0.959);
+    }
+
+    100% {
+        top: 0;
+        left: -400px;
+        width: 200px;
+        height: 100px;
+        /* color: tomato; */
+        font-size: 45px;
+        border: 5px dashed rgba(211, 29, 228, 0.781);
+    }
+}
+
+
