@@ -3,59 +3,149 @@ header {
     background-color: white;
     height: 75px;
     display: flex;
+    justify-content: center;
 }
 
-.header-title-item {
-    border: rgb(81, 228, 51) solid 2px;
-    position: relative;
-    width: 150px;
-    height: 50px;
-    left: 150px;
-    top: 10px;
-
+header section {
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    justify-content: space-between;
 }
 
+
+
+/* Заголовок */
 .header-title {
-    margin: 5px;
-    font-size: 33px;
+    width: 100%;
+    max-width: 150px;
+    font-size: 40px;
+    color: rgb(70, 66, 136);
+    padding-top: 10px;
 }
 
 
-.items {
-    border: rgb(228, 107, 51) solid 2px;
+
+
+/* Навигация */
+.nav {
+    width: 100%;
+    max-width: 300px;
+    padding-top: 35px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: rgb(104, 108, 112);
+    font-size: 18px;
+    transition: color .1s linear;
     position: relative;
-    height: 50px;
-    width: 750px;
-    left: 250px;
-    top: 10px;
+}
+ .nav-link:hover {
+    color: rgb(180, 185, 190);
+ } 
+
+
+
+ /* Ховер эфект-1 */
+ .nav-link:after {
+     content: "";
+     display: block;
+     height: 3px;
+     width: 83px;
+     background-color: rgb(148, 179, 253);
+     position: absolute;
+     display: none;
+     top: 75%;
+     left: 0;
+     z-index: 1;
+ }
+
+
+
+ /* Ховер эфект-2 */
+ .nav-link-2:after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 55px;
+    background-color: rgb(148, 179, 253);
+    position: absolute;
+    display: none;
+    top: 75%;
+    left: 0;
+    z-index: 1;
 }
 
+
+
+
+
+ /* Ховер эфект-3 */
+ .nav-link-3:after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 38px;
+    background-color: rgb(148, 179, 253);
+    position: absolute;
+    display: none;
+    top: 75%;
+    left: 0;
+    z-index: 1;
+}
+.nav-link:hover:after {
+    display: block;
+}
+
+
+
+
+
+/* Поиск */
 .search {
-    border: rgb(51, 69, 228) solid 2px;
-    position: relative;
-    height: 50px;
-    width: 450px;
-    top: 10px;
-    left: 350px;
+    width: 100%;
+    max-width: 450px;
+    padding-top: 30px;
+    text-align: center;
 }
 
-/* Анимация заголовка Header */
-
-@keyframes header-title {
-    0% {
-        /* height: 18px; */
-        /* font-size: 5px; */
-    }
-
-    50% {
-        /* font-size: 35px; */
-    }
-
-    100% {
-        /* height: 20px; */
-        font-size: 33px;
-    }
+.src-input {
+    width: 100%;
+    max-width: 350px;
+    height: 25px;
+    border: none;
+    background-color: rgb(231, 234, 236);
+    border-radius: 1px;
 }
+
+.search-btm {
+    height: 27px;
+    /* width: 20px; */
+    text-decoration: none;
+    text-align: center;
+    padding: 4px 9px;
+    border: none;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    font: 14px Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #1e1f1f;
+    background-color: #ced1d9;
+    -webkit-box-shadow: inset 0px 0px 1px #ffffff;
+    -moz-box-shadow: inset 0px 0px 1px #ffffff;
+    box-shadow: inset 0px 0px 1px #ffffff;
+    opacity: 0.58;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=58);
+    filter: alpha(opacity=58);
+    padding: auto 0;
+    margin-left: 10px;
+}
+
+
 
 
 
@@ -126,7 +216,7 @@ figcaption {
 .layout-conteiner {
     background-color: white;
     border-radius: 3px;
-    padding-top: 50px;
+    padding-top: 15px;
     max-width: 1300px;
     margin: 150px auto 0 auto;
 }

@@ -8,26 +8,51 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Подключаем шрифты -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Oswald&family=Ubuntu&display=swap"
         rel="stylesheet">
+
+    <!-- Подключаем Animate.css через CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- Подключаем файл CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Подключаем WOW скрипт -->
+    <script src="wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+    <!-- Иконка сайта -->
     <link rel="icon" href="img/favicon-personal-site.png" type="img/png">
+
+    <!-- Заголовок -->
     <title>🔰мой сайт🔰</title>
+
 </head>
 
-<!-- ОБЩИЙ ФОН -->
 
-<body>
+
+
+<!-- Header -->
+
+<body class=" animate__animated animate__fadeInDown">
     <header>
-        <div class="header-title-item">
+        <section>
             <div class="header-title">Мой сайт</div>
-        </div>
-        <div class="items">
 
-        </div>
-        <div class="search">
-
-        </div>
+            <div class="nav">
+                <a class="nav-link nav-link" href="">Обсуждение</a>
+                <a class="nav-link-2 nav-link" href="">Помощь</a>
+                <a class="nav-link-3 nav-link" href="">Войти</a>
+            </div>
+            <div class="search">
+                <input class="src-input" type="text">
+                <button class="search-btm">Поиск</button>
+            </div>
+        </section>
     </header>
 
 
@@ -56,6 +81,10 @@
                         </p>
                     </div>
                 </div>
+
+
+
+
                 <!-- About me -->
                 <div class="section_About_me">
                     <div class="img-box1">
@@ -73,16 +102,22 @@
                     </div>
                 </div>
             </div>
+
             <!-- ГОРИЗОНТАЛЬНАЯ ЛИНИЯ -->
             <hr>
+
+            <!-- Анимация "с НГ" -->
             <div class="animation-section">
                 <div class="animation-div">С новым 2020!</div>
             </div>
             <hr>
-            <!-- ТАБЛИЦА -->
 
+
+
+
+            <!-- ТАБЛИЦА -->
             <center>
-                <div class="table-box">
+                <div class="table-box wow animate__animated animate__fadeInDown">
                     <table border="1">
                         <caption><b>школьные предметы</b></caption>
                         <tr>
@@ -122,74 +157,80 @@
                     </table>
                 </div>
                 <br>
-                <!-- ВИДЕО -->
 
-                <video class="video-1" src="video/production ID_4463164.mp4" controls loop width="1000" autoplay>
+
+
+                <!-- ВИДЕО -->
+                <video class="video-1 wow animate__animated animate__zoomIn" src="video/production ID_4463164.mp4"
+                    controls loop width="1000" autoplay>
                 </video>
 
-            </center>
-            <!-- ПОЛЯ ВВОДА -->
 
 
-            <div class="letter-text-box">
-                <div class="letter">
-                    <h2>Написать письмо</h2>
-                    <form action="">
-                        <label for="text">Текст письма</label><br>
-                        <textarea name="" id="text" cols="30" rows="8"></textarea>
-                        <br>
-                        <label for="username">От кого</label><br>
-                        <input type="username" id="username" name="username">
-                        <br><br>
-                        <button type="submit">
-                            Отправить
-                        </button>
-                    </form>
-                </div>
+                <!-- ПОЛЯ ВВОДА -->
+                <div class="letter-text-box">
+                    <div class="letter  wow animate__animated animate__slideInLeft">
+                        <h2>Написать письмо</h2>
+                        <form action="">
+                            <label for="text">Текст письма</label><br>
+                            <textarea name="" id="text" cols="30" rows="8"></textarea>
+                            <br>
+                            <label for="username">От кого</label><br>
+                            <input type="username" id="username" name="username">
+                            <br><br>
+                            <button type="submit">
+                                Отправить
+                            </button>
+                        </form>
+                    </div>
 
 
-                <!-- про рисование -->
-                <div class="text-painting">
-                    <h2>
-                        Про мои рисовашки
-                    </h2>
-                    <p>
-                        <span class="strong-text">У меня есть инстаграм</span>
-                        в котором я отдыхаю от<br> занудных уроков по рисованию
-                        и творю всё что мне вздумается💃
-                    </p>
-                    <a href="https://www.instagram.com/8_ary_8/">
-                        Мой инстаграм с рисунками
-                    </a>
+                    <!-- про рисование -->
+                    <div class="text-painting wow animate__animated animate__slideInRight">
+                        <h2>
+                            Про мои рисовашки
+                        </h2>
+                        <p>
+                            <span class="strong-text">У меня есть инстаграм</span>
+                            в котором я отдыхаю от<br> занудных уроков по рисованию
+                            и творю всё что мне вздумается💃
+                        </p>
+                        <a href="https://www.instagram.com/8_ary_8/">
+                            Мой инстаграм с рисунками
+                        </a>
+                    </div>
                 </div>
-            </div>
-            <!-- горизонтальная линия -->
-            <hr>
-            <!-- мои работы по дши -->
-            <h2 class="galery-title"><span class="galery">Некоторые из моих последних работ</span></h2>
-            <div class="main main-galary">
-                <div class="section-galary">
-                    <figure class="figure-NY">
-                        <img class="paints NY" src="img/NY.jpg" alt="картина нг">
-                        <figcaption>Работа:«Новогодние сказки на ночь»</figcaption>
-                    </figure>
-                    <figure class="figure-grand">
-                        <img class="paints grand" src="img/grand.jpg" alt="картина посиделки у колодца">
-                        <figcaption>Картина: «Посиделки у колодца»</figcaption>
-                    </figure>
+
+                <!-- горизонтальная линия -->
+                <hr>
+
+                <!-- мои работы по дши -->
+                <h2 class="galery-title"><span class="galery">Некоторые из моих последних работ</span></h2>
+                <div class="main main-galary">
+                    <div class="section-galary">
+                        <figure class="figure-NY">
+                            <img class="paints NY" src="img/NY.jpg" alt="картина нг">
+                            <figcaption>Работа:«Новогодние сказки на ночь»</figcaption>
+                        </figure>
+                        <figure class="figure-grand">
+                            <img class="paints grand" src="img/grand.jpg" alt="картина посиделки у колодца">
+                            <figcaption>Картина: «Посиделки у колодца»</figcaption>
+                        </figure>
+                    </div>
+                    <div class="section-galary">
+                        <figure class="figure-lapti">
+                            <img class="paints lapti" src="img/lapti.jpg" alt="картина лапти">
+                            <figcaption>Графика «Лапти»</figcaption>
+                        </figure>
+                        <figure class="figure-ywaza">
+                            <img class="paints ywaza" src="img/ywaza.jpg" alt="картина ваза">
+                            <figcaption>Живопись «Ваза и платки»</figcaption>
+                        </figure>
+                    </div>
                 </div>
-                <div class="section-galary">
-                    <figure class="figure-lapti">
-                        <img class="paints lapti" src="img/lapti.jpg" alt="картина лапти">
-                        <figcaption>Графика «Лапти»</figcaption>
-                    </figure>
-                    <figure class="figure-ywaza">
-                        <img class="paints ywaza" src="img/ywaza.jpg" alt="картина ваза">
-                        <figcaption>Живопись «Ваза и платки»</figcaption>
-                    </figure>
-                </div>
-            </div>
         </div>
+        <!-- <h1 class="wow animate__animated animate__zoomIn">An animated element</h1>
+        <h1 class="animate__animated animate__zoomIn">An animated element</h1> -->
     </main>
 
 </body>
