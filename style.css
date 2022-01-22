@@ -20,10 +20,18 @@ header section {
     width: 100%;
     max-width: 150px;
     font-size: 40px;
-    color: rgb(70, 66, 136);
     padding-top: 10px;
 }
 
+.title-link {
+    text-decoration: none;
+    color: rgb(70, 66, 136);
+}
+
+.title-link:hover {
+    cursor: pointer;
+    color: rgb(113, 117, 179);
+}
 
 
 
@@ -43,30 +51,31 @@ header section {
     transition: color .1s linear;
     position: relative;
 }
- .nav-link:hover {
+
+.nav-link:hover {
     color: rgb(180, 185, 190);
- } 
+}
 
 
 
- /* Ховер эфект-1 */
- .nav-link:after {
-     content: "";
-     display: block;
-     height: 3px;
-     width: 83px;
-     background-color: rgb(148, 179, 253);
-     position: absolute;
-     display: none;
-     top: 75%;
-     left: 0;
-     z-index: 1;
- }
+/* Ховер эфект-1 */
+.nav-link:after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 83px;
+    background-color: rgb(148, 179, 253);
+    position: absolute;
+    display: none;
+    top: 75%;
+    left: 0;
+    z-index: 1;
+}
 
 
 
- /* Ховер эфект-2 */
- .nav-link-2:after {
+/* Ховер эфект-2 */
+.nav-link-2:after {
     content: "";
     display: block;
     height: 3px;
@@ -83,8 +92,8 @@ header section {
 
 
 
- /* Ховер эфект-3 */
- .nav-link-3:after {
+/* Ховер эфект-3 */
+.nav-link-3:after {
     content: "";
     display: block;
     height: 3px;
@@ -96,6 +105,7 @@ header section {
     left: 0;
     z-index: 1;
 }
+
 .nav-link:hover:after {
     display: block;
 }
@@ -121,6 +131,12 @@ header section {
     border-radius: 1px;
 }
 
+.src-input:focus {
+    outline: 0;
+    outline-offset: 0;
+    background-color: rgb(217, 227, 233);
+}
+
 .search-btm {
     height: 27px;
     /* width: 20px; */
@@ -143,6 +159,14 @@ header section {
     filter: alpha(opacity=58);
     padding: auto 0;
     margin-left: 10px;
+}
+
+.search-btm:hover {
+    cursor: pointer;
+    background-color: #b3b6c0;
+    -webkit-box-shadow: inset 0px 0px 1px #ffffff;
+    -moz-box-shadow: inset 0px 0px 1px #ffffff;
+    box-shadow: inset 0px 0px 1px #ffffff;
 }
 
 
@@ -232,13 +256,12 @@ figcaption {
 
 .section {
     background-color: rgb(148, 179, 253);
-    height: 600px;
+    min-height: 600px;
     position: relative;
     padding: 10px;
     margin: 10px;
     width: 50%;
     border-radius: 10px;
-    /* padding:0 25% 0 25%; */
 }
 
 .section_About_me {
@@ -298,6 +321,11 @@ h1 {
     padding-bottom: 20px;
     padding-top: 7px;
     border-radius: 10px;
+    margin: 0 auto;
+}
+
+.table-box table {
+    margin: 0 auto;
 }
 
 .video-1 {
@@ -305,6 +333,11 @@ h1 {
     border: 2px solid rgb(148, 179, 253);
     padding: 10px;
     margin: 20px;
+}
+
+.video-1_container {
+    display: flex;
+    justify-content: center;
 }
 
 .letter {
