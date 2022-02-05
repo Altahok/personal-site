@@ -39,7 +39,7 @@ header section {
 .nav {
     width: 100%;
     max-width: 300px;
-    padding-top: 35px;
+    padding-top: 24px;
     display: flex;
     justify-content: space-evenly;
 }
@@ -50,6 +50,7 @@ header section {
     font-size: 18px;
     transition: color .1s linear;
     position: relative;
+    cursor: pointer;
 }
 
 .nav-link:hover {
@@ -67,7 +68,6 @@ header section {
     background-color: rgb(148, 179, 253);
     position: absolute;
     display: none;
-    top: 75%;
     left: 0;
     z-index: 1;
 }
@@ -83,7 +83,6 @@ header section {
     background-color: rgb(148, 179, 253);
     position: absolute;
     display: none;
-    top: 75%;
     left: 0;
     z-index: 1;
 }
@@ -101,7 +100,6 @@ header section {
     background-color: rgb(148, 179, 253);
     position: absolute;
     display: none;
-    top: 75%;
     left: 0;
     z-index: 1;
 }
@@ -109,6 +107,112 @@ header section {
 .nav-link:hover:after {
     display: block;
 }
+
+
+
+
+
+
+
+
+/* Модальное окно ПОМОЩЬ */
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background-color: rgba(19, 19, 19, 0.329);
+    overflow: auto;
+}
+
+.modal-content {
+    background-color: whitesmoke;
+    padding: 25px;
+    width: 100%;
+    max-width: 620px;
+    height: auto;
+    margin: 120px auto;
+    box-shadow: 0 0 7px 7px rgba(46, 46, 46, 0.486);
+    border-radius: 5px;
+}
+
+
+
+
+
+/* Оформление окна поддержки */
+.closeBtn {
+    float: right;
+    margin: 5px;
+    font-size: 30px;
+    font-weight: bolder;
+    margin-right: 15px;
+    margin-left: 50px;
+    color: rgb(119, 119, 119);
+}
+
+.closeBtn:hover {
+    cursor: pointer;
+    color: black;
+}
+
+.myModal-header {
+    font-size: 40px;
+    color: rgb(70, 66, 136);
+}
+
+.myModal-main {
+    margin: 25px 20px 0 5px;
+    font-size: 20px;
+}
+
+.modal-input {
+    /* background-color: rgba(128, 128, 128, 0.164); */
+    min-height: 520px;
+}
+
+.NLP {
+    display: block;
+    width: 100%;
+    margin-top: 25px;
+    font-size: 20px;
+    height: 35px;
+}
+
+.textarea-header {
+    margin-top: 25px;
+    color: rgb(36, 34, 70);
+}
+
+.textarea-application {
+    border: 1px solid rgb(56, 56, 56);
+    margin-left: 1px;
+    margin-top: 2px;
+    resize: vertical;
+    font-size: 16px;
+    padding: 10px 15px;
+}
+
+.help-btn {
+    border: none;
+    background-color: rgb(204, 204, 204);
+    padding: 5px 10px;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.help-btn:hover {
+    cursor: pointer;
+    background-color: rgb(185, 185, 185);
+}
+  
+
+
 
 
 

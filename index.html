@@ -51,16 +51,48 @@
             <div class="header-title"><a class="title-link" href="">Мой сайт</a></div>
 
             <div class="nav">
-                <a class="nav-link nav-link" href="">Обсуждение</a>
-                <a class="nav-link-2 nav-link" href="">Помощь</a>
-                <a class="nav-link-3 nav-link" href="">Войти</a>
+                <p class="nav-link nav-link" href="">Обсуждение</p>
+                <p id="helpLink"  class="nav-link-2 nav-link" href="">Помощь</p>
+                <p class="nav-link-3 nav-link" href="">Войти</p>
             </div>
             <div class="search">
                 <input class="src-input" type="text">
-                <button class="search-btm">Поиск</button>
+                <button  class="search-btm">Поиск</button>
             </div>
         </section>
+
     </header>
+
+
+    <!-- Модальное окно "ПОМОЩЬ" -->
+    <div class="modal" id="myModal">
+        <div class="modal-content">
+            <span id="closeBtn" class="closeBtn">&times;</span>
+
+            <div class="myModal-header">Здраствуйте! вас приветствует окно тех поддержки.</div>
+            
+            <div class="myModal-main">
+             Заполните заявку и максимально точно опишите вашу проблему, это ускорит её решение.
+            </div>
+            
+            <div class="modal-input">
+                <input class="NLP name" type="text" placeholder="Фамилия...">
+                <input class="NLP lname" type="text" placeholder="Имя...">
+                <input class="NLP pname" type="text" placeholder="Отчество(если есть)...">
+
+                <div class="textarea-header">Опишите вашу проблему</div>
+                <textarea class="textarea-application" name="" id="" cols="64" rows="12"></textarea>
+                <button class="help-btn">Отправить</button>
+
+            </div>
+            
+        </div>
+    </div>
+
+
+
+
+
 
 
 
@@ -258,6 +290,14 @@
                 </div>
             </div>
         </div>
+
+
+       <!-- Подключил js Модального окна -->
+       <script src="modal.js"></script>
+
+
+
+
         <!-- <h1 class="wow animate__animated animate__zoomIn">An animated element</h1>
         <h1 class="animate__animated animate__zoomIn">An animated element</h1> -->
     </main>
