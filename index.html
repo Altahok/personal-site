@@ -52,12 +52,12 @@
 
             <div class="nav">
                 <p class="nav-link nav-link" href="">Обсуждение</p>
-                <p id="helpLink"  class="nav-link-2 nav-link" href="">Помощь</p>
-                <p class="nav-link-3 nav-link" href="">Войти</p>
+                <p id="helpLink" class="nav-link-2 nav-link" href="">Помощь</p>
+                <p id="enterLink" class="nav-link-3 nav-link" href="">Войти</p>
             </div>
             <div class="search">
                 <input class="src-input" type="text">
-                <button  class="search-btm">Поиск</button>
+                <button class="search-btm">Поиск</button>
             </div>
         </section>
 
@@ -70,11 +70,11 @@
             <span id="closeBtn" class="closeBtn">&times;</span>
 
             <div class="myModal-header">Здраствуйте! вас приветствует окно тех поддержки.</div>
-            
+
             <div class="myModal-main">
-             Заполните заявку и максимально точно опишите вашу проблему, это ускорит её решение.
+                Заполните заявку и максимально точно опишите вашу проблему, это ускорит её решение.
             </div>
-            
+
             <div class="modal-input">
                 <input class="NLP name" type="text" placeholder="Фамилия...">
                 <input class="NLP lname" type="text" placeholder="Имя...">
@@ -82,13 +82,47 @@
 
                 <div class="textarea-header">Опишите вашу проблему</div>
                 <textarea class="textarea-application" name="" id="" cols="64" rows="12"></textarea>
-                <button class="help-btn">Отправить</button>
+                <button id="btnHelp" class="help-btn">Отправить</button>
 
             </div>
-            
+
         </div>
     </div>
 
+
+
+
+
+    <!-- Модальное окно "ВОЙТИ" -->
+    <div class="modal-2" id="enter-wrapper">
+        <div class="modal-enter">
+
+            <span id="closeEnter" class="closeBtn">&times;</span>
+
+            <!-- <h2>Авторизация</h2> -->
+            <div class="myModal-header">Авторизация</div>
+
+            
+            <div class="enter-main">
+
+                <input type="text" class="input-enter " placeholder="Фамилия...">
+
+                <input type="text" class="input-enter " placeholder="Имя...">
+
+                <div class="header-enter">Придумайте уникальный логин.</div>
+                <input type="text" class="input-enter input-login " placeholder="Логин...">
+
+                <div class="header-enter">Пороль должен состоять из латинских букв, цифр и символов.</div>
+                <input type="password" class="input-enter input-password " placeholder="Пороль...">
+
+                <button id="endCl" type="submit" class="help-btn">Отправить</button>
+
+            </div>
+        </div>
+    </div>
+
+
+    
 
 
 
@@ -292,8 +326,8 @@
         </div>
 
 
-       <!-- Подключил js Модального окна -->
-       <script src="modal.js"></script>
+        <!-- Подключил js Модального окна -->
+        <script src="modal.js"></script>
 
 
 
