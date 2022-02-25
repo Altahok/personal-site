@@ -63,3 +63,14 @@ endButton.onclick = function () {
     modalEnt.style.display = "none";
     alert("Вы успешно авторизировались!")   ;
 }
+
+
+// Модальное окно приветствие
+
+const modalHello = document.getElementById('hello')
+const closeHello = document.getElementById('closeHello')
+
+// Закрытие крестиком
+closeHello.onclick = function () {
+    modalHello.style.display = "none";
+}

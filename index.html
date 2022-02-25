@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -22,6 +22,9 @@
     <!-- Подключаем js -->
     <script src="script.js"></script>
 
+    <!-- Подключил лайт бокс CSS -->
+    <link rel="stylesheet" href="css/lightbox.min.css">
+
     <!-- Подключаем WOW скрипт -->
     <script src="wow.min.js"></script>
     <script>
@@ -31,14 +34,10 @@
     <!-- Иконка сайта -->
     <link rel="icon" href="img/favicon-personal-site.png" type="img/png">
 
-
-
     <!-- Заголовок -->
     <title>🔰мой сайт🔰</title>
 
 </head>
-
-
 
 
 
@@ -90,9 +89,6 @@
     </div>
 
 
-
-
-
     <!-- Модальное окно "ВОЙТИ" -->
     <div class="modal-2" id="enter-wrapper">
         <div class="modal-enter">
@@ -102,7 +98,7 @@
             <!-- <h2>Авторизация</h2> -->
             <div class="myModal-header">Авторизация</div>
 
-            
+
             <div class="enter-main">
 
                 <input type="text" class="input-enter " placeholder="Фамилия...">
@@ -120,14 +116,6 @@
             </div>
         </div>
     </div>
-
-
-    
-
-
-
-
-
 
 
 
@@ -288,53 +276,61 @@
                 <div class="section-galary">
 
                     <div class="paint-wrapper">
-                        <figure class="figure-NY">
+                        <a href="img/NY.jpg" data-lightbox="nature">
                             <img class="paints NY" src="img/NY.jpg" alt="картина нг">
-                            <figcaption>Работа:«Новогодние сказки на ночь»</figcaption>
-                        </figure>
+                        </a>
+                        <span>Работа:«Новогодние сказки на ночь»</span>
                     </div>
 
-                    <div class="paint-wrapper">
-                        <figure class="figure-grand">
+                    <div class="paint-wrapper paint-wrapper-grand">
+                        <a href="img/grand.jpg" data-lightbox="nature">
                             <img class="paints grand" src="img/grand.jpg" alt="картина посиделки у колодца">
-                            <figcaption>Картина: «Посиделки у колодца»</figcaption>
-                        </figure>
+                        </a>
+                        <span>Картина: «Посиделки у колодца»</span>
                     </div>
 
                 </div>
 
-
-
                 <div class="section-galary">
 
                     <div class="paint-wrapper">
-                        <figure class="figure-lapti">
+                        <a href="img/lapti.jpg" data-lightbox="nature">
                             <img class="paints lapti" src="img/lapti.jpg" alt="картина лапти">
-                            <figcaption>Графика «Лапти»</figcaption>
-                        </figure>
+                        </a>
+                        <span>Графика «Лапти»</span>
                     </div>
 
                     <div class="paint-wrapper">
-                        <figure class="figure-ywaza">
+                        <a href="img/ywaza.jpg" data-lightbox="nature">
                             <img class="paints ywaza" src="img/ywaza.jpg" alt="картина ваза">
-                            <figcaption>Живопись «Ваза и платки»</figcaption>
-                        </figure>
+                        </a>
+                        <span>Живопись «Ваза и платки»</span>
                     </div>
 
                 </div>
             </div>
         </div>
-
-
-        <!-- Подключил js Модального окна -->
-        <script src="modal.js"></script>
-
-
-
-
-        <!-- <h1 class="wow animate__animated animate__zoomIn">An animated element</h1>
-        <h1 class="animate__animated animate__zoomIn">An animated element</h1> -->
     </main>
+
+    <!-- style="opacity: 0;" -->
+    <div class="hello" id="hello">
+        <span id="closeHello" class="closeBtn">&times;</span>
+        <h3>Приветствую на моём сайте!</h3>
+        <p>Ты попал на мой сайт, который я виду с того первого дня, как начал увлекаться веб разработкой. Приглашаю тебя
+            посмотреть на мой проект.</p>
+    </div>
+    <script src="modal_3.js"></script>
+
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/lightbox.min.js"></script>
+
+    <!-- Подключил js Модального окна -->
+    <script src="modal.js"></script>
+
+    <!-- <h1 class="wow animate__animated animate__zoomIn">An animated element</h1>
+<h1 class="animate__animated animate__zoomIn">An animated element</h1> -->
 
 </body>
 
