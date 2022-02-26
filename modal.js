@@ -13,14 +13,14 @@ closeBtn.onclick = function () {
     modal.style.display = "none";
 }
 
-// Закрытие окна через нажатие на пустое место
-window.onclick = function (event) {
-    if (event.target === modal) {
-        modal.style.display = "none";
-    }
-}
+// // Закрытие окна через нажатие на пустое место
+// window.onclick = function (event) {
+//     if (event.target === modal) {
+//         modal.style.display = "none";
+//     }
+// }
 
-
+    
 
 // Модальное окно "ВОЙТИ"
 const modalEnt = document.getElementById("enter-wrapper");
